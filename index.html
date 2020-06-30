@@ -10,12 +10,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-     
       .info{
           padding-left: 10px;
       }
       .projects{
           display: flex;
+      }
+      .about{
+        text-align: center;
       }
      .about a{
           color: white;
@@ -23,20 +25,28 @@
      .about a:hover{
         color: white;
       }
-      .fa{
-        font-size: small;
-        padding: 4px;
+      .fa-twitter::before{
+          padding-right: 5px;
+          font-size: larger;
       }
-      .fa-twitter{
-          padding: 4px;
+      .fa-linkedin::before{
+        padding-right: 5px;
+          font-size: larger;
       }
-      .fa-linkedin{
-          padding: 4px;
-
+      .fa-github::before{
+        padding-right: 5px;
+          font-size: larger;
+      }
+      .fa-envelope::before{
+        padding-right: 5px;
+          font-size: larger;
       }
      .about p{
           font-weight: 600;
           padding: 10px;
+      }
+      .about span{
+        padding: 8px;
       }
       .cont {
 	/* CHANGE TO GRID */
@@ -55,36 +65,54 @@
 	overflow: hidden;
 	width: 300px;
 }
-.resume{
-  margin: 200px;
-}
+/* .resume{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 200px;
+  margin-top: 100px;
+  
+} */
+/* @media(max-width: 360px){
+  .resume{
+    margin: 0px;
+  }
+} */
+
+/* .wif{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+} */
   </style>
 </head>
 <body>
     
 </body>
 <div class="container" style="width: 500px;margin: auto;margin-top: 100px;">
-  <center>
+  <!-- <center> -->
     <div class="about" >
         <img src="/PSX_20191104_181717 (2).jpg" height="200" width="250" alt="shashippk " class="rounded-circle img-fluid">
         <div class="info">
             <h1>Shashi Pathipaka</h1>
             <div class="social">
-           <span  class="badge badge-dark fa"><a href="https://github.com/shashi2602">@shashippk</a></span> 
+           <span  class="badge badge-dark fa fa-github"><a href="https://github.com/shashi2602">@shashippk</a></span> 
            <span  class="badge badge-dark fa fa-twitter " style="background-color: #55ACEE;"><a href="https://twitter.com/Ppkshashi" style="padding-left: 4px;">@Ppkshashi</a></span>
            <span  class="badge badge-dark fa fa-linkedin " style="background-color: #007bb5;"><a href="https://www.linkedin.com/in/shashi-preetham-196320165/" style="padding-left: 4px;">shashippk</a></span>
-        </div>
+           <span  class="badge badge-dark fa fa-envelope " style="background-color:black;"><a href="mailto:shashi.ppk@gmail.com" style="padding-left: 4px;">Mail</a></span>
+              
+          </div>
         <p>Loved to learn new things,surffing internet,learning something new every day</p>
         </div>
     </div>
-  </center>  
+  <!-- </center>   -->
 </div>
 <div class="container">
     <h3 class="text-center" style="padding: 10px;">Projects</h3>
     <div class="cont">
        
         
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;background-color: darkcyan; color: white;">
                 <div class="card-body">
                   <h5 class="card-title">Lessthan</h5>
                   <p class="card-text text-justify">Lessthan is the android application were it fetchs the tech news from the api. the features of it is we can check the mobile details and avilability</p>
@@ -96,7 +124,7 @@
               </div>
            
     
-              <div class="card" style="width: 18rem;">
+              <div class="card" style="width: 18rem;background-color: firebrick;color: white;">
                 <div class="card-body">
                   <h5 class="card-title">Lesscric</h5>
                   <p class="card-text text-justify">It was an sports application were it fetchs data from cricbuzz api</p>
@@ -109,7 +137,7 @@
     
     
     
-              <div class="card" style="width: 18rem;">
+              <div class="card" style="width: 18rem;background-color: tomato;color: white;">
                 <div class="card-body">
                   <h5 class="card-title">weather</h5>
                   <p class="card-text text-justify">It was a basic weather web application,developed with flask</p>
@@ -129,10 +157,14 @@
     </div>
         
 </div>
-<div class="jumbotron  resume">
+<div class="jumbotron  wif m-5">
+  <span><h2 class="text-center">WIF</h2></span>
+  <span><h5 class="text-center">Coming soon...</h5></span>
+</div>
+<div class="jumbotron  resume m-5" >
   <div class="clearfix">
   <span><h2 class="float-left">Download Resume</h2></span>
- <span class="float-right"><a href="https://docs.google.com/document/d/1vCG6__D1VeUfFk8e8iDaFNghXD5kIZlbyZm3ijCHmKg/edit?usp=sharing" style="color:white" class="bg-primary p-2 rounded">click here</a></span>
+ <span class="float-right"><a href="https://docs.google.com/document/d/1vCG6__D1VeUfFk8e8iDaFNghXD5kIZlbyZm3ijCHmKg/edit?usp=sharing" style="color:white;font-size: x-large" class="bg-primary p-2 rounded">Click here</a></span>
 </div>
 </div>  
 </html>
