@@ -10,7 +10,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
-      .info{
+
+       .info{
           padding-left: 10px;
       }
       .projects{
@@ -20,11 +21,12 @@
         text-align: center;
       }
      .about a{
-          color: white;
+          color:white;
       }
      .about a:hover{
         color: white;
-      }
+     }
+      /* }
       .fa-twitter::before{
           padding-right: 5px;
           font-size: larger;
@@ -40,79 +42,72 @@
       .fa-envelope::before{
         padding-right: 5px;
           font-size: larger;
-      }
+      } */
+      
      .about p{
           font-weight: 600;
           padding: 10px;
       }
-      .about span{
-        padding: 8px;
+      .fa{
+        padding-right: 5px;
       }
-      .cont {
-	/* CHANGE TO GRID */
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	justify-items: center;
-	grid-gap: 20px;
-	width: 940px;
-	max-width: 100%;
-	margin: auto;
-}
-.card {
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-	overflow: hidden;
-	width: 300px;
-}
-/* .resume{
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 200px;
-  margin-top: 100px;
-  
-} */
-/* @media(max-width: 360px){
-  .resume{
-    margin: 0px;
+@media (max-width: 400px){
+  .myplace{
+    max-width: 20rem;
   }
-} */
+}
+@media (max-width: 360px){
+  .myplace{
+    max-width: 23rem;
+  }
+}
+.card{
+  background: #cb2d3e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-/* .wif{
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 50px;
-  margin-top: 100px;
-} */
+
+}
+.resume{
+  background: #093028;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
   </style>
 </head>
 <body>
     
 </body>
-<div class="container" style="width: 500px;margin: auto;margin-top: 100px;">
+<div class="container myplace" style="width: 30rem;margin: auto;margin-top: 50px;">
   <!-- <center> -->
+    
     <div class="about" >
         <img src="/PSX_20191104_181717 (2).jpg" height="200" width="250" alt="shashippk " class="rounded-circle img-fluid">
         <div class="info">
             <h1>Shashi Pathipaka</h1>
-            <div class="social">
-           <span  class="badge badge-dark fa fa-github"><a href="https://github.com/shashi2602">@shashippk</a></span> 
-           <span  class="badge badge-dark fa fa-twitter " style="background-color: #55ACEE;"><a href="https://twitter.com/Ppkshashi" style="padding-left: 4px;">@Ppkshashi</a></span>
-           <span  class="badge badge-dark fa fa-linkedin " style="background-color: #007bb5;"><a href="https://www.linkedin.com/in/shashi-preetham-196320165/" style="padding-left: 4px;">shashippk</a></span>
-           <span  class="badge badge-dark fa fa-envelope " style="background-color:black;"><a href="mailto:shashi.ppk@gmail.com" style="padding-left: 4px;">Mail</a></span>
-		    
+            <div class="container">
+              <div class="row">
+                <a href="https://github.com/shashi2602" class="badge badge-dark col-sm m-2 p-2" style="background-color:#0f1412;"> <span  class=" fa fa-github" ></span>@shashippk </span></a> 
+                <a href="https://twitter.com/Ppkshashi"class="badge badge-dark col-sm m-2 p-2" style="background-color:#066066;"><span  class=" fa fa-twitter"></span>@Ppkshashi</span></a>
+                <a href="https://www.linkedin.com/in/shashi-preetham-196320165/" style="background-color:#192080;"  class="badge badge-dark col-sm m-2 p-2" ><span  class=" fa fa-linkedin" ></span>shashippk</a>
+                <a href="mailto:shashi.ppk@gmail.com"class="badge badge-dark col-sm m-2 p-2" style="background-color:#237A57;"><span  class=" fa fa-envelope"></span>Mail</span> </a>
+              </div>
+           
+              
           </div>
         <p>Loved to learn new things,surffing internet,learning something new every day</p>
         </div>
     </div>
   <!-- </center>   -->
 </div>
-<div class="container">
-    <h3 class="text-center" style="padding: 10px;">Projects</h3>
-    <div class="cont">
+<h3 class="text-center" style="padding: 10px;font-size: xx-large;">Projects</h3>
+<div class="container" >
+    
+    <div class="row">
        
         
-            <div class="card" style="width: 18rem;background-color: darkcyan; color: white;">
+            <div class="card col-sm m-2" style="width: 35rem;background-color: darkcyan; color: white;">
                 <div class="card-body">
                   <h5 class="card-title">Lessthan</h5>
                   <p class="card-text text-justify">Lessthan is the android application were it fetchs the tech news from the api. the features of it is we can check the mobile details and avilability</p>
@@ -124,7 +119,7 @@
               </div>
            
     
-              <div class="card" style="width: 18rem;background-color: firebrick;color: white;">
+              <div class="card col-sm m-2" style="width: 35rem;background-color: firebrick;color: white;">
                 <div class="card-body">
                   <h5 class="card-title">Lesscric</h5>
                   <p class="card-text text-justify">It was an sports application were it fetchs data from cricbuzz api</p>
@@ -137,7 +132,7 @@
     
     
     
-              <div class="card" style="width: 18rem;background-color: tomato;color: white;">
+              <div class="card col-sm m-2" style="width: 35rem;background-color: tomato;color: white;">
                 <div class="card-body">
                   <h5 class="card-title">weather</h5>
                   <p class="card-text text-justify">It was a basic weather web application,developed with flask</p>
@@ -148,23 +143,17 @@
                     
                 </div>
               </div>
-              <div class="card" style="width:18rems">
-              <div class="card-body">
-                <h2>More on way....</h2>
-              </div>
-              </div>
         
     </div>
-        
+    
+    <div class="jumbotron text-center jumbotron-fluid resume" style="margin-top: 50px;">
+      <div class="container"></div>
+        <h1 style="color: white;">Git My Resume</h1>
+          <a class="btn btn-primary btn-lg" href="https://docs.google.com/document/d/1vCG6__D1VeUfFk8e8iDaFNghXD5kIZlbyZm3ijCHmKg/edit?usp=sharing">Download</a>
+        </p>
+      </div>
+    </div>
+    
 </div>
-<div class="jumbotron  wif m-5">
-  <span><h2 class="text-center">WIF</h2></span>
-  <span><h5 class="text-center">Coming soon...</h5></span>
-</div>
-<div class="jumbotron  resume m-5" >
-  <div class="clearfix">
-  <span><h2 class="float-left">Download Resume</h2></span>
- <span class="float-right"><a href="https://docs.google.com/document/d/1vCG6__D1VeUfFk8e8iDaFNghXD5kIZlbyZm3ijCHmKg/edit?usp=sharing" style="color:white;font-size: x-large" class="bg-primary p-2 rounded">Click here</a></span>
-</div>
-</div>  
+
 </html>
